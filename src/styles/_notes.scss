@@ -1,0 +1,68 @@
+
+
+
+
+
+.notes {
+    // background-color: green;
+
+    &__container {
+        display: flex;
+        // border: 1px solid red; 
+        height: 30em;
+    }
+
+    &__list {
+        margin: 0;
+        margin-right: 2em;
+        padding: 0;
+        padding: .5em;
+        padding-left: 0;
+        list-style: none;
+        width: 23em;
+        height: 30em;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar  {
+            background: transparent;
+            width: .15em;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(128, 176, 244, 0.356);
+        }
+    }
+
+    // FOrm 
+    &__form {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        margin-right: 2em;
+        padding: .7em 1.2em;
+        border-radius: .5em;
+        border: 1px solid #ccc;
+    }
+
+    &__textarea {
+        margin-right: 2em;
+        padding: .7em 1.2em;
+        border-radius: .5em;
+        border: 1px solid #ccc;
+    }
+
+    &__btn {
+        padding: .9em .8em;
+        background-color: rgba(0, 0, 255, 0.243);
+        color: blue;
+        border-radius: .5em;
+        border: 0;
+        outline: 0;
+        border: 1px solid rgba(0, 0, 255, 0.086);
+        font-weight: 900;
+        cursor: pointer;
+    }
+}

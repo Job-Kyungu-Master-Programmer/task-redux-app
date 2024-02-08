@@ -1,0 +1,85 @@
+
+
+
+
+.note {
+    margin-bottom: 1em;
+    padding: .7em 1em;
+    border-radius: .5em;
+    border: 1px solid #dddddd;
+    width: 90%;
+    min-height: 10em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: .5em;
+        font-size: 1.6em;
+        font-weight: 500;
+    }
+
+    &__content {
+        font-size: 1em;
+    }
+
+    &__tag {
+        margin-top: 1em;
+        padding: .2em .7em;
+        font-size: .8em;
+        border-radius: 1em;
+        width: fit-content;
+        background: rgba(17, 124, 200, 0.085);
+        border: 1px solid rgba(17, 124, 200, 0.538);
+        color: rgb(17, 124, 200);
+    }
+
+    &__middle {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        // background: rgb(183, 183, 183);
+    }
+
+    &__vis {
+        margin-left: 1em;
+        display: inline-block;
+        font-size: 1.4em;
+        cursor: pointer;
+        color: rgb(17, 44, 200);
+
+        &:nth-child(3) {
+            color: rgb(29, 209, 29);
+        }
+    }
+
+
+    &__bottom {
+        padding-top: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__likes, &__dates {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        > span {
+            margin-left: .1em;
+        }
+    }
+
+    &__likes { cursor: pointer; background: transparent; color: #bcbcbc;}
+
+    &__like {
+        color: blue;
+    }
+
+    &__date {
+        margin-left: .4em;
+        color: #bcbcbc;
+    }
+}
